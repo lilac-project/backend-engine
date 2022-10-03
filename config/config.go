@@ -17,6 +17,6 @@ type MongoConfig struct {
 }
 
 type Configs struct {
-	Mongo   MongoConfig   `json:"mongo"`
-	Postgre PostgreConfig `json:"postgre"`
+	Mongo   *MongoConfig   `json:"mongo"`
+	Postgre *PostgreConfig `json:"postgre"`
 }
